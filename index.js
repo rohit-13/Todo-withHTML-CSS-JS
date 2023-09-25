@@ -106,7 +106,6 @@ optionContainer.addEventListener("click", (e) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   task = form.task.value;
 
   if (task.trim().length > 0) {
@@ -147,7 +146,6 @@ tasksContainer.addEventListener("click", (e) => {
     }
     filterCompletedTasks(tasks);
   }
-
   syncStorage();
 });
 

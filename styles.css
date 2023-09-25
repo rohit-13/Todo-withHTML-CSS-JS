@@ -66,6 +66,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .todo-form--hidden {
@@ -73,6 +74,7 @@ body {
 }
 
 .todo-input {
+  font-family: Montserrat;
   border: 1px solid #bdbdbd;
   border-radius: 12px;
   width: 70%;
@@ -94,7 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-top: 32px;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -107,6 +109,7 @@ body {
 
 .task-check {
   display: flex;
+  align-items: center;
 }
 
 .task-input {
@@ -132,8 +135,6 @@ body {
 
 .task-input::after {
   content: "\f00c";
-  font-weight: 600;
-  font-size: 0.75rem;
   color: #fff;
   display: none;
 }
@@ -145,7 +146,9 @@ body {
 .task-label {
   font-family: Montserrat;
   font-size: 18px;
-  margin: 4px 8px 4px 8px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 0 0 8px;
 }
 
 .task-erase {
