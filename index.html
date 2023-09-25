@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Todo</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">#todo</h1>
+      <header class="todo-header">
+        <ul class="todo-options" id="todo-options">
+          <li class="todo-option todo-option--active" id="all">All</li>
+          <li class="todo-option" id="active">Active</li>
+          <li class="todo-option" id="complete">Completed</li>
+        </ul>
+      </header>
+
+      <form class="todo-form" id="todo-form">
+        <input
+          class="todo-input"
+          type="text"
+          name="task"
+          placeholder="add details"
+        />
+        <input class="todo-submit" type="submit" value="Add" />
+      </form>
+
+      <ul class="todo-tasks" id="tasks-list"></ul>
+
+      <div class="erase-button" id="erase-button">
+        <i class="ri-delete-bin-line erase-button-icon"></i>
+        <p class="erase-button-text">delete all</p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
